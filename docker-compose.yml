@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: mephisto-hub-db-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mephisto_hub
+      POSTGRES_USER: mephisto
+      POSTGRES_PASSWORD: dev_only_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
