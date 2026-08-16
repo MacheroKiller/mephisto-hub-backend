@@ -1,0 +1,42 @@
+services:
+  backend:
+    image: mephisto-hub-backend:latest
+    container_name: mephisto-hub-backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/mephisto_hub
+      SPRING_DATASOURCE_USERNAME: mephisto
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+    ports:
+      - "8081:8080"
+    networks:
+      - internal
+
+  db:
+    image: postgres:17-alpine
+    container_name: mephisto-hub-backend-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mephisto_hub
+      POSTGRES_USER: mephisto
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - mephisto_hub_backend_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mephisto -d mephisto_hub"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
+
+volumes:
+  mephisto_hub_backend_data:
