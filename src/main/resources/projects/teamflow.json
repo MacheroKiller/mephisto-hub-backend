@@ -1,0 +1,28 @@
+{
+  "id": "teamflow",
+  "name": "TeamFlow",
+  "tagline": "Sprint and project management, built from the frustrations of using someone else's.",
+  "status": "en-desarrollo",
+  "category": ["full-stack", "saas", "productivity"],
+  "stack": [
+    "Angular",
+    "Signal Forms",
+    "Angular CDK",
+    "Spring Boot",
+    "Java 21",
+    "PostgreSQL",
+    "JWT",
+    "Docker"
+  ],
+  "demoUrl": "https://teamflow.amuryllis.com",
+  "repoUrl": "https://github.com/MacheroKiller/mephisto-hub",
+  "backendRepoUrl": "https://github.com/MacheroKiller/teamflow-backend",
+  "docsUrl": null,
+  "accentColor": "#7aa2f7",
+  "coverImage": "/assets/projects/teamflow/cover.png",
+  "screenshots": [],
+  "problem": "markdown/teamflow/problem.md",
+  "architectureDiagram": null,
+  "featured": true,
+  "order": 1
+}

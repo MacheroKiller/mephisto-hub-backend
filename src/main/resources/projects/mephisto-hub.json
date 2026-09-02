@@ -1,0 +1,27 @@
+{
+  "id": "mephisto-hub",
+  "name": "Mephisto Hub",
+  "tagline": "The personal ecosystem of a Staff Engineer building independent, product-grade systems.",
+  "status": "activo",
+  "category": ["full-stack", "portfolio", "developer-hub"],
+  "stack": [
+    "Angular",
+    "Nx Monorepo",
+    "Angular Material",
+    "Spring Boot",
+    "Java 21",
+    "PostgreSQL",
+    "Docker"
+  ],
+  "demoUrl": "https://hub.amuryllis.com",
+  "repoUrl": "https://github.com/MacheroKiller/mephisto-hub",
+  "backendRepoUrl": "https://github.com/MacheroKiller/mephisto-hub-backend",
+  "docsUrl": null,
+  "accentColor": "#daa7ff",
+  "coverImage": "/assets/projects/mephisto-hub/cover.png",
+  "screenshots": [],
+  "problem": "markdown/mephisto-hub/problem.md",
+  "architectureDiagram": null,
+  "featured": true,
+  "order": 0
+}
