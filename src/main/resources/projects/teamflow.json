@@ -2,7 +2,7 @@
   "id": "teamflow",
   "name": "TeamFlow",
   "tagline": "Sprint and project management, built from the frustrations of using someone else's.",
-  "status": "en-desarrollo",
+  "status": "deployed",
   "category": ["full-stack", "saas", "productivity"],
   "stack": [
     "Angular",

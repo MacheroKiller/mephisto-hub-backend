@@ -2,7 +2,7 @@
   "id": "mephisto-hub",
   "name": "Mephisto Hub",
   "tagline": "The personal ecosystem of a Staff Engineer building independent, product-grade systems.",
-  "status": "activo",
+  "status": "active",
   "category": ["full-stack", "portfolio", "developer-hub"],
   "stack": [
     "Angular",
